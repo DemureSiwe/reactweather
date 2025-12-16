@@ -1,18 +1,25 @@
-import React from React
+import React from "react";
+import Weather from "./Weather";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
-        <h1>Weather project</h1>
+      <div className="container">
+        <Weather defaultCity="Johannesburg" />
 
-      <footer>
-        Open sourced on Github by Busisiwe Tsetseng</footer>
-
+        <footer>
+          This project is open sourced on{" "}
+          <a
+            href="https://github.com/DemureSiwe/reactweather.git"
+            target="blank"
+          >
+            Github
+          </a>{" "}
+          by Busisiwe Tsetseng
+        </footer>
+      </div>
     </div>
-
-    
-
   );
 }
-
